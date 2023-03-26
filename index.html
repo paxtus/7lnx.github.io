@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jinx</title>
+  <meta http-equiv="Content-Type" 
+      content="text/html; charset=utf-8">
+
+  <script>
+  function enterPortal() {
+    document.getElementById("enter-portal").style.display = "none";
+    document.getElementById("audio-controls").play();
+    document.getElementById("audio-controls").style.display = "block";
+    document.getElementById("body-div").style.display = "block";
+  }
+  
+  function redirectToURL() {
+    window.location.href = "https://jinx.wtf/";
+  }
+</script>
+  <title>jinx</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+
+    body {
+      padding:30px;
+      margin: auto;
+      width: 800px; 
+      font-family: 'Urbanist', sans-serif;
+      color: #ffffff;
+      margin-bottom:100px;
+      background-color:#0f0f0f;
+    }
+
+    .title {
+      text-align: center;
+      color: white;
+      font-size: 25px;
+    }
+
+    .title:hover {
+      text-shadow: 0 0 10px #fff;
+      cursor: pointer;
+    }
+
+    .url_text {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .url_text:hover {
+      text-shadow: 0 0 10px #fff;
+      cursor: pointer;
+    }
+
+    a {
+      text-align: center;
+      color: rgb(204, 204, 204);
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgb(25, 25, 25);
+      position: fixed;
+      height: 60px;
+      justify-content:center;
+      align-items:center;
+      display: flex;
+    }
+    
+    hr.solid {
+      border-top: 3px solid rgb(255, 255, 255);
+    }
+
+    #enter-portal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Urbanist', sans-serif;
+      cursor: pointer;
+    }
+
+    #body-div {
+      display: none;
+    }
+
+    .glowing {
+      text-shadow: 0 0 10px #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="enter-portal" onclick="enterPortal()">click</div>
+  </div>
+  
+  <div id="body-div">
+    <div class="title" onclick="redirectToURL()">
+      <h1 class="simple_header glowing">jinx.wtf</h1>
+    </div>
+
+    <p align="center">  
+      <img src="https://discord.c99.nl/widget/theme-4/959535881318973496.png">
+    </p>
+
+    <audio id="audio-controls" autoplay loop>
+      <source src="prolly.mp3" type="audio/mpeg"></source>
+    </audio>      
+
+    <div class="footer">
+      <p><a class="url_text" href="https://discord.com/users/959535881318973496" target="_blank">jinx#1000</a> - <a class="url_text" href="https://github.com/7lnx"><i class="fa fa-github" aria-hidden="true" style="color:rgb(255, 255, 255)"></i></a></p>
+    </div>
+
+</body>
+</html>
